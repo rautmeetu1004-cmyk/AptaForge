@@ -1,0 +1,68 @@
+{
+  "descriptor_vs_mfe": {
+    "GC content": {
+      "pearson": -0.113,
+      "spearman": -0.157
+    },
+    "Purine ratio": {
+      "pearson": 0.188,
+      "spearman": 0.099
+    },
+    "Shannon H (k=1)": {
+      "pearson": -0.39,
+      "spearman": -0.443
+    },
+    "Shannon H (k=3)": {
+      "pearson": -0.53,
+      "spearman": -0.626
+    },
+    "Pi-stacking": {
+      "pearson": 0.147,
+      "spearman": 0.104
+    },
+    "GQS density": {
+      "pearson": 0.148,
+      "spearman": 0.045
+    },
+    "Struct. density": {
+      "pearson": 0.259,
+      "spearman": 0.281
+    },
+    "RC self-match": {
+      "pearson": -0.158,
+      "spearman": -0.171
+    },
+    "Scaffolding index": {
+      "pearson": -0.605,
+      "spearman": -0.671
+    },
+    "Length": {
+      "pearson": -0.579,
+      "spearman": -0.635
+    }
+  },
+  "surrogate": {
+    "descriptors_only": {
+      "r2": 0.5025,
+      "spearman": 0.7663,
+      "mae": 1.9826
+    },
+    "kmer_only": {
+      "r2": 0.5941,
+      "spearman": 0.7941,
+      "mae": 1.8076
+    },
+    "kmer_plus_descriptors": {
+      "r2": 0.6126,
+      "spearman": 0.8005,
+      "mae": 1.7936
+    }
+  },
+  "pca_var": [
+    0.4518,
+    0.2041,
+    0.105,
+    0.0904,
+    0.0636
+  ]
+}

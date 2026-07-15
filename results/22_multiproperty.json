@@ -1,0 +1,22 @@
+{
+  "MFE (kcal/mol)": {
+    "r2": 0.611,
+    "spearman": 0.7981,
+    "mae": 1.8049
+  },
+  "Structural entropy (bits)": {
+    "r2": 0.2112,
+    "spearman": 0.4483,
+    "mae": 0.1971
+  },
+  "Ensemble defect": {
+    "r2": 0.1026,
+    "spearman": 0.3641,
+    "mae": 0.0792
+  },
+  "Ensemble free energy (kcal/mol)": {
+    "r2": 0.7412,
+    "spearman": 0.8791,
+    "mae": 1.4859
+  }
+}

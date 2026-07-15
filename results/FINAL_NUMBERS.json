@@ -1,0 +1,270 @@
+{
+  "dataset": {
+    "n_unique_sequences": 1426,
+    "n_targets": 480,
+    "mfe_mean": -5.616,
+    "mfe_std": 4.068,
+    "frac_no_fold": 0.065
+  },
+  "protocol": "deduplicated to unique sequences; 5-fold split BY SEQUENCE (leak-free for folding)",
+  "mfe_benchmark": {
+    "length_only": {
+      "r2": 0.3326,
+      "spearman": 0.631,
+      "mae": 2.3678
+    },
+    "length_gc": {
+      "r2": 0.3994,
+      "spearman": 0.7004,
+      "mae": 2.2055
+    },
+    "kmer_histgbm": {
+      "r2": 0.611,
+      "spearman": 0.7981,
+      "mae": 1.8049
+    },
+    "cnn": {
+      "r2": 0.5376,
+      "spearman": 0.7697,
+      "mae": 1.9376
+    }
+  },
+  "rigor": {
+    "mean_predictor_r2": -0.0021,
+    "histgbm_vs_lengc_wilcoxon_p": 7.821956357102501e-18,
+    "histgbm_vs_lengc_cliffs_delta": 0.1193,
+    "histgbm_seed_std": 0.0
+  },
+  "multiproperty": {
+    "MFE (kcal/mol)": {
+      "r2": 0.611,
+      "spearman": 0.7981,
+      "mae": 1.8049
+    },
+    "Structural entropy (bits)": {
+      "r2": 0.2112,
+      "spearman": 0.4483,
+      "mae": 0.1971
+    },
+    "Ensemble defect": {
+      "r2": 0.1026,
+      "spearman": 0.3641,
+      "mae": 0.0792
+    },
+    "Ensemble free energy (kcal/mol)": {
+      "r2": 0.7412,
+      "spearman": 0.8791,
+      "mae": 1.4859
+    }
+  },
+  "case_study": {
+    "model": "HistGBM (leak-free dedup)",
+    "speed": {
+      "surrogate_ms_per_seq": 0.0754,
+      "inference_ms_per_seq": 0.0125,
+      "featurization_ms_per_seq": 0.0629,
+      "nupack_ms_per_seq": 15.2,
+      "speedup": 201
+    },
+    "targets": {
+      "POL_HV1H2": {
+        "n": 42,
+        "spearman": 0.766,
+        "recall_top30_at_screen50": 0.923,
+        "k_true": 13
+      },
+      "Thrombin, Human": {
+        "n": 16,
+        "spearman": 0.729,
+        "recall_top30_at_screen50": 1.0,
+        "k_true": 5
+      }
+    }
+  },
+  "kmer_interpretability": {
+    "corr_gc_vs_stability": -0.344,
+    "corr_grun_vs_stability": 0.113,
+    "most_stabilizing": [
+      [
+        "AGCT",
+        -0.221
+      ],
+      [
+        "CAGC",
+        -0.211
+      ],
+      [
+        "GCAC",
+        -0.164
+      ],
+      [
+        "CGAA",
+        -0.16
+      ],
+      [
+        "AAGC",
+        -0.143
+      ],
+      [
+        "CGAC",
+        -0.142
+      ]
+    ]
+  },
+  "thrombin_positive_control": {
+    "thrombin_n": 16,
+    "thrombin_gfrac_median": 0.38,
+    "bg_gfrac_median": 0.296,
+    "gfrac_mwu_p": 0.002112967653872461,
+    "thrombin_pct_g4": 93.8,
+    "bg_pct_g4": 51.3,
+    "gtracts_cliffs_delta": 0.252
+  },
+  "primer_analysis": {
+    "flank_len": 12,
+    "n_sequences": 1426,
+    "n_recurrent_5p_flanks": 81,
+    "frac_corpus_with_primer": 0.508,
+    "top_5p_flanks": [
+      [
+        "AGCAGCACAGAG",
+        69
+      ],
+      [
+        "ATACCAGCTTAT",
+        63
+      ],
+      [
+        "ATCCAGAGTGAC",
+        30
+      ],
+      [
+        "CAGCTCAGAAGC",
+        20
+      ],
+      [
+        "AAGGAGCAGCGT",
+        16
+      ],
+      [
+        "ATACGGGAGCCA",
+        16
+      ],
+      [
+        "GAATTCAGTCGG",
+        15
+      ],
+      [
+        "ATCCGTCACACC",
+        15
+      ]
+    ],
+    "top_3p_flanks": [
+      [
+        "TGCTACCGTGAA",
+        67
+      ],
+      [
+        "TAAGTGCAATCT",
+        58
+      ],
+      [
+        "CGGTGGCTTAGT",
+        28
+      ],
+      [
+        "CGTGCATCTGCA",
+        20
+      ],
+      [
+        "GGTGTGACGGAT",
+        16
+      ],
+      [
+        "ATATCGTCTCCC",
+        15
+      ],
+      [
+        "CTGTGGTGCTGT",
+        15
+      ],
+      [
+        "TGGCTCCCGTAT",
+        15
+      ]
+    ],
+    "primer_family": "AGCAGCACAGAG",
+    "family_n": 40,
+    "full_mfe_mean": -7.72,
+    "core_mfe_mean": -4.51,
+    "flank_mfe_shift_mean": -3.21
+  },
+  "sequence_features": {
+    "descriptor_vs_mfe": {
+      "GC content": {
+        "pearson": -0.113,
+        "spearman": -0.157
+      },
+      "Purine ratio": {
+        "pearson": 0.188,
+        "spearman": 0.099
+      },
+      "Shannon H (k=1)": {
+        "pearson": -0.39,
+        "spearman": -0.443
+      },
+      "Shannon H (k=3)": {
+        "pearson": -0.53,
+        "spearman": -0.626
+      },
+      "Pi-stacking": {
+        "pearson": 0.147,
+        "spearman": 0.104
+      },
+      "GQS density": {
+        "pearson": 0.148,
+        "spearman": 0.045
+      },
+      "Struct. density": {
+        "pearson": 0.259,
+        "spearman": 0.281
+      },
+      "RC self-match": {
+        "pearson": -0.158,
+        "spearman": -0.171
+      },
+      "Scaffolding index": {
+        "pearson": -0.605,
+        "spearman": -0.671
+      },
+      "Length": {
+        "pearson": -0.579,
+        "spearman": -0.635
+      }
+    },
+    "surrogate": {
+      "descriptors_only": {
+        "r2": 0.5025,
+        "spearman": 0.7663,
+        "mae": 1.9826
+      },
+      "kmer_only": {
+        "r2": 0.5941,
+        "spearman": 0.7941,
+        "mae": 1.8076
+      },
+      "kmer_plus_descriptors": {
+        "r2": 0.6126,
+        "spearman": 0.8005,
+        "mae": 1.7936
+      }
+    },
+    "pca_var": [
+      0.4518,
+      0.2041,
+      0.105,
+      0.0904,
+      0.0636
+    ]
+  }
+}

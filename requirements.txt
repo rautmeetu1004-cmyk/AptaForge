@@ -1,0 +1,15 @@
+# Core pipeline (label generation excluded — see note below)
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.10
+matplotlib>=3.7
+
+# CNN surrogate only (code/models/02_benchmark_cnn.py, code/analysis/06_cnn_evaluation.py)
+torch>=2.0
+
+# Folding-label generation only (code/models/00_generate_folding_labels.py and
+# code/analysis/07_primer_analysis_nupack.py). NUPACK is a separate install and is
+# NOT required to reproduce any result below — the labels it produced are shipped
+# in data/folding_labels.csv. See https://www.nupack.org
+# nupack>=4.0

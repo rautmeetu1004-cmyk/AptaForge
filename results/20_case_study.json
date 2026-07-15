@@ -1,0 +1,24 @@
+{
+  "model": "HistGBM (leak-free dedup)",
+  "speed": {
+    "surrogate_ms_per_seq": 0.0754,
+    "inference_ms_per_seq": 0.0125,
+    "featurization_ms_per_seq": 0.0629,
+    "nupack_ms_per_seq": 15.2,
+    "speedup": 201
+  },
+  "targets": {
+    "POL_HV1H2": {
+      "n": 42,
+      "spearman": 0.766,
+      "recall_top30_at_screen50": 0.923,
+      "k_true": 13
+    },
+    "Thrombin, Human": {
+      "n": 16,
+      "spearman": 0.729,
+      "recall_top30_at_screen50": 1.0,
+      "k_true": 5
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "n_by_source": {
+    "aptadb": 812,
+    "utexas": 612
+  },
+  "feature_stats": {
+    "Length": {
+      "aptadb_median": 45.0,
+      "utexas_median": 79.0,
+      "mwu_p": 1.2701034405934177e-84
+    },
+    "GC content": {
+      "aptadb_median": 0.538,
+      "utexas_median": 0.531,
+      "mwu_p": 0.08919564417459311
+    },
+    "mfe_kcal": {
+      "aptadb_median": -3.842,
+      "utexas_median": -6.734,
+      "mwu_p": 1.601831862858194e-41
+    },
+    "structural_entropy": {
+      "aptadb_median": 0.834,
+      "utexas_median": 0.96,
+      "mwu_p": 2.600863584305608e-18
+    },
+    "Purine ratio": {
+      "aptadb_median": 1.111,
+      "utexas_median": 1.077,
+      "mwu_p": 0.121402471674216
+    },
+    "Scaffolding index": {
+      "aptadb_median": 13.804,
+      "utexas_median": 20.638,
+      "mwu_p": 3.4163158781850653e-78
+    }
+  }
+}

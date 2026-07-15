@@ -1,0 +1,189 @@
+{
+  "thrombin_g4_control": {
+    "thrombin_n": 16,
+    "thrombin_gfrac_median": 0.38,
+    "bg_gfrac_median": 0.296,
+    "gfrac_mwu_p": 0.002112967653872461,
+    "thrombin_pct_g4": 93.8,
+    "bg_pct_g4": 51.3,
+    "gtracts_cliffs_delta": 0.252
+  },
+  "per_target_top_4mers": {
+    "HIV-1 Pol": [
+      [
+        "GGAA",
+        2.63
+      ],
+      [
+        "TTTA",
+        2.53
+      ],
+      [
+        "CTGA",
+        2.45
+      ],
+      [
+        "AGAT",
+        2.34
+      ],
+      [
+        "CTTT",
+        2.33
+      ]
+    ],
+    "NRP1": [
+      [
+        "GGGG",
+        3.93
+      ],
+      [
+        "GGGC",
+        2.89
+      ],
+      [
+        "TGGG",
+        2.67
+      ],
+      [
+        "CGGG",
+        2.58
+      ],
+      [
+        "GGGT",
+        2.54
+      ]
+    ],
+    "Ochratoxin A": [
+      [
+        "AAAA",
+        2.58
+      ],
+      [
+        "GTAA",
+        2.32
+      ],
+      [
+        "ATTG",
+        2.27
+      ],
+      [
+        "TAAG",
+        2.26
+      ],
+      [
+        "TAAT",
+        2.08
+      ]
+    ],
+    "Thrombin": [
+      [
+        "GTAG",
+        2.4
+      ],
+      [
+        "GCCT",
+        2.17
+      ],
+      [
+        "GGTA",
+        2.12
+      ],
+      [
+        "TAGG",
+        1.79
+      ],
+      [
+        "TCGC",
+        1.76
+      ]
+    ],
+    "Aflatoxin M1": [
+      [
+        "CCGT",
+        2.36
+      ],
+      [
+        "GCTC",
+        2.21
+      ],
+      [
+        "CCCG",
+        2.15
+      ],
+      [
+        "CCAA",
+        2.11
+      ],
+      [
+        "CACC",
+        2.11
+      ]
+    ],
+    "SUH": [
+      [
+        "GACC",
+        4.1
+      ],
+      [
+        "TCTA",
+        3.54
+      ],
+      [
+        "CGAC",
+        3.24
+      ],
+      [
+        "AGAC",
+        3.22
+      ],
+      [
+        "TAGA",
+        2.84
+      ]
+    ],
+    "IgE": [
+      [
+        "CCTA",
+        2.44
+      ],
+      [
+        "AGCA",
+        2.4
+      ],
+      [
+        "CAGA",
+        2.29
+      ],
+      [
+        "TGAA",
+        2.21
+      ],
+      [
+        "CGTG",
+        2.04
+      ]
+    ],
+    "Escherichia co": [
+      [
+        "AACG",
+        2.96
+      ],
+      [
+        "CTCA",
+        2.87
+      ],
+      [
+        "TAAA",
+        2.78
+      ],
+      [
+        "AAAC",
+        2.69
+      ],
+      [
+        "GCTC",
+        2.65
+      ]
+    ]
+  }
+}

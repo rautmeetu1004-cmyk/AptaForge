@@ -1,0 +1,79 @@
+{
+  "flank_len": 12,
+  "n_sequences": 1426,
+  "n_recurrent_5p_flanks": 81,
+  "frac_corpus_with_primer": 0.508,
+  "top_5p_flanks": [
+    [
+      "AGCAGCACAGAG",
+      69
+    ],
+    [
+      "ATACCAGCTTAT",
+      63
+    ],
+    [
+      "ATCCAGAGTGAC",
+      30
+    ],
+    [
+      "CAGCTCAGAAGC",
+      20
+    ],
+    [
+      "AAGGAGCAGCGT",
+      16
+    ],
+    [
+      "ATACGGGAGCCA",
+      16
+    ],
+    [
+      "GAATTCAGTCGG",
+      15
+    ],
+    [
+      "ATCCGTCACACC",
+      15
+    ]
+  ],
+  "top_3p_flanks": [
+    [
+      "TGCTACCGTGAA",
+      67
+    ],
+    [
+      "TAAGTGCAATCT",
+      58
+    ],
+    [
+      "CGGTGGCTTAGT",
+      28
+    ],
+    [
+      "CGTGCATCTGCA",
+      20
+    ],
+    [
+      "GGTGTGACGGAT",
+      16
+    ],
+    [
+      "ATATCGTCTCCC",
+      15
+    ],
+    [
+      "CTGTGGTGCTGT",
+      15
+    ],
+    [
+      "TGGCTCCCGTAT",
+      15
+    ]
+  ],
+  "primer_family": "AGCAGCACAGAG",
+  "family_n": 40,
+  "full_mfe_mean": -7.72,
+  "core_mfe_mean": -4.51,
+  "flank_mfe_shift_mean": -3.21
+}

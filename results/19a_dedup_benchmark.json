@@ -1,0 +1,30 @@
+{
+  "protocol": "dedup unique sequences, 5-fold split BY SEQUENCE (leak-free for folding)",
+  "n_unique": 1426,
+  "mean_predictor_r2": -0.0021,
+  "length_only": {
+    "r2": 0.3326,
+    "spearman": 0.631,
+    "mae": 2.3678
+  },
+  "length_gc": {
+    "r2": 0.3994,
+    "spearman": 0.7004,
+    "mae": 2.2055
+  },
+  "kmer_histgbm": {
+    "r2": 0.611,
+    "spearman": 0.7981,
+    "mae": 1.8049
+  },
+  "histgbm_vs_lengc": {
+    "wilcoxon_p": 7.821956357102501e-18,
+    "cliffs_delta": 0.1193,
+    "median_err_gbm": 1.3697,
+    "median_err_lengc": 1.7226
+  },
+  "histgbm_seed_stability": {
+    "mean": 0.611,
+    "std": 0.0
+  }
+}

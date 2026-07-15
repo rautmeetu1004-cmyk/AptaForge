@@ -1,0 +1,7 @@
+{
+  "model": "CNN (regularised, nested early-stop)",
+  "protocol": "dedup, split-by-sequence, same folds as 19a",
+  "r2": 0.5376,
+  "spearman": 0.7697,
+  "mae": 1.9376
+}
